@@ -1,0 +1,16 @@
+title: "Электро шугам ХХК"
+description: "Эрчим хүчний иж бүрэн шийдэл"
+url: ""
+baseurl: ""
+lang: mn
+
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+plugins:
+  - jekyll-seo-tag

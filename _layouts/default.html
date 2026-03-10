@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.meta_title | default: site.title }}</title>
+  <meta name="description" content="{{ page.meta_description | default: site.description }}">
+  <meta property="og:title" content="{{ page.meta_title | default: site.title }}">
+  <meta property="og:description" content="{{ page.meta_description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '2rem',
+            xl: '2rem',
+            '2xl': '2rem',
+          },
+        },
+        extend: {
+          screens: {
+            sm: '40rem',
+            md: '48rem',
+            lg: '64rem',
+            xl: '80rem',
+            '2xl': '86rem',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body class="{{ page.body_class }}">
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
