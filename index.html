@@ -204,66 +204,6 @@ body_class: hero-dark
 
 
 
-<!-- Block: Circular Stats -->
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <!-- Left -->
-      <div>
-        <p class="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">Манай давуу тал</p>
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 leading-tight">Үйлчилгээний чадавхи</h2>
-        <p class="text-gray-500 mb-8 text-base leading-relaxed">Монгол улсын эрчим хүчний системийн хэмжээнд эрчим хүчний аудит хийх, зөвлөх үйлчилгээ үзүүлэх, эрчим хүчний байгууламжийн зураг төсөл, техник – эдийн засгийн үндэслэл боловсруулах иж бүрэн цогц үйлчилгээг хэрэглэгчдэд хүргэнэ.</p>
-        <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/25 group">
-          Бүх үйлчилгээ үзэх
-          <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-      <!-- Right: Circular Stats -->
-      <div class="space-y-8">
-        <!-- 100% -->
-        <div class="flex items-center gap-6 group">
-          <div class="relative w-28 h-28 flex-shrink-0">
-            <svg class="transform -rotate-90" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="50" fill="none" stroke="#f1f5f9" stroke-width="8"/>
-              <circle class="circular-progress-circle" cx="60" cy="60" r="50" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-dasharray="314.16" stroke-dashoffset="314.16" data-offset="0"/>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-gray-900">100</span><span class="text-sm text-gray-400">%</span>
-            </div>
-          </div>
-          <p class="flex-1 text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Тусгай зөвшөөрөлтэй</p>
-        </div>
-        <!-- 95% -->
-        <div class="flex items-center gap-6 group">
-          <div class="relative w-28 h-28 flex-shrink-0">
-            <svg class="transform -rotate-90" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="50" fill="none" stroke="#f1f5f9" stroke-width="8"/>
-              <circle class="circular-progress-circle" cx="60" cy="60" r="50" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-dasharray="314.16" stroke-dashoffset="314.16" data-offset="15.708"/>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-gray-900">95</span><span class="text-sm text-gray-400">%</span>
-            </div>
-          </div>
-          <p class="flex-1 text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Үйлчлүүлэгчийн сэтгэл ханамж</p>
-        </div>
-        <!-- 15 years -->
-        <div class="flex items-center gap-6 group">
-          <div class="relative w-28 h-28 flex-shrink-0">
-            <svg class="transform -rotate-90" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="50" fill="none" stroke="#f1f5f9" stroke-width="8"/>
-              <circle class="circular-progress-circle" cx="60" cy="60" r="50" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-dasharray="314.16" stroke-dashoffset="314.16" data-offset="267.036"/>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="text-2xl font-bold text-gray-900">15</span><span class="text-sm text-gray-400">%</span>
-            </div>
-          </div>
-          <p class="flex-1 text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Жилийн туршлага</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Block: Team -->
 <section class="py-20 bg-gray-50">
   <div class="container mx-auto px-4">
@@ -271,22 +211,69 @@ body_class: hero-dark
       <p class="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">Удирдлага</p>
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Л. Энхсүх - Үүсгэн байгуулагч, гүйцэтгэх захирал</h2>
     </div>
-    <div class="max-w-lg mx-auto">
-      <div class="team-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-        <div class="relative h-72 overflow-hidden bg-gray-100">
-          <img src="{{ '/media/image-post1.webp' | relative_url }}" alt="Л. Энхсүх" class="team-image w-full h-full object-cover">
-          <div class="team-overlay absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-            <div class="flex justify-center gap-3">
-              <a href="mailto:info@elektroshugam.mn" class="w-9 h-9 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white hover:text-blue-600 transition-colors">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              </a>
-            </div>
-          </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+      <!-- Service 1 -->
+      <div class="service-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+        <div class="relative h-52 overflow-hidden">
+          <img src="{{ '/media/auditor.webp' | relative_url }}" alt="Эрчим хүчний аудит" class="service-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg">01</div>
         </div>
-        <div class="p-6 text-center">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">Л. Энхсүх</h3>
-          <p class="text-sm text-blue-600 font-medium mb-3">Үүсгэн байгуулагч, гүйцэтгэх захирал</p>
-          <p class="text-gray-500 text-sm leading-relaxed">Техникийн ухааны доктор. 1977 онд төрсөн. ШУТИС-д цахилгааны бакалавр, магистр, ОХУ-ын "Москвагийн Эрчим Хүчний Улсын Их Сургууль"-д докторын зэрэг хамгаалсан. Эрчим хүчний салбарт 20 гаруй жил ажилласан туршлагатай.</p>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">Эрчим хүчний аудит хийх</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Эрчим хүчний аудит гэдэг нь айл өрх, албан байгууллага болон үйлдвэрийн газруудын цахилгаан байгууламжийн эрчим хүчний хэрэглээ, үр ашиг, алдагдлыг нарийвчлан судлаж дүн шинжилгээ хийдэг мэргэжлийн үйлчилгээ юм.</p>
+          <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-sm group/link">
+            Дэлгэрэнгүй
+            <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+        <div class="relative h-52 overflow-hidden">
+          <img src="{{ '/media/consulting.webp' | relative_url }}" alt="Зөвлөх үйлчилгээ" class="service-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg">02</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">Зөвлөх үйлчилгээ үзүүлэх</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Зөвлөх үйлчилгээ гэдэг нь айл өрх, албан байгууллага болон үйлдвэрийн газруудад эрчим хүчний чиглэлээр тулгарч буй асуудлыг шийдвэрлэхэд туслах мэргэжлийн үйлчилгээ юм.</p>
+          <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-sm group/link">
+            Дэлгэрэнгүй
+            <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+        <div class="relative h-52 overflow-hidden">
+          <img src="{{ '/media/planning.webp' | relative_url }}" alt="Зураг, төсөл" class="service-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg">03</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">Зураг, төсөл боловсруулах</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Эрчим хүчний зураг төсөл гэдэг нь тухайн байгууламжийг найдвартай элийн засгийн хувьд хямд зардлаар эрчим хүчээр хангах асуудлыг тодорхойлсон техникийн бичиг баримтын иж бүрдэл юм.</p>
+          <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-sm group/link">
+            Дэлгэрэнгүй
+            <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
+        <div class="relative h-52 overflow-hidden">
+          <img src="{{ '/media/tezu.webp' | relative_url }}" alt="ТЭЗҮ" class="service-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          <div class="absolute top-4 left-4 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-lg">04</div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">ТЭЗҮ боловсруулах</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Техник эдийн засгийн үндэслэл (ТЭЗҮ) нь нийгэм эдийн засгийн хувьд тухайн төсөл хэрэгжих боломжтой эсэх хөрөнгө оруулалтаа хэрхэн нөхөхийг тооцсон судалгаа шинжилгээний цогц материал юм</p>
+          <a href="{{ '/services/' | relative_url }}" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold text-sm group/link">
+            Дэлгэрэнгүй
+            <svg class="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
