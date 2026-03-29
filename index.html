@@ -214,10 +214,12 @@ body_class: hero-dark
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
       <!-- Service 1 -->
       <div class="service-card group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100">
-          <div class="relative aspect-[3/4] flex items-center justify-center bg-gray-100">
-          <img src="{{ '/media/enkhsukh.webp' | relative_url }}" alt="Гүйцэтгэх захирал" class="w-full h-full object-cover object-top>
+          <div class="relative h-40 overflow-hidden">
+            <img 
+              src="{{ '/media/enkhsukh.webp' | relative_url }}" 
+              class="w-full h-full object-cover object-top">
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>          
+      <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>          
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition-colors text-center">Гүйцэтгэх захирал</h3>
           <p class="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3 text-center">Л.Энхсүх</p>
